@@ -1,0 +1,117 @@
+<!--
+    The Coffee Corner - Catering Enquiry Page
+    =====================================
+    Handles catering and event service requests through
+    an interactive form with real-time validation.
+    
+    Features:
+    - Detailed event information collection
+    - Automatic cost estimation
+    - Date validation (minimum 7 days notice)
+    - Guest count validation (10-500 people)
+    - Custom notification system for feedback
+    
+    Form data is validated client-side with helpful
+    error messages and success notifications.
+    
+    Author: Kabelo Chabedi
+    Last Updated: November 3, 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup for proper rendering and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags for better search engine visibility -->
+<title>Catering Services | The Coffee Corner - Events & Functions</title>
+<meta name="description" content="Professional catering services for office meetings, weddings, birthdays, and corporate events in Cape Town. Quality coffee and fresh food delivered to your venue.">
+<meta name="keywords" content="coffee catering Cape Town, event catering, office catering, wedding coffee service, corporate catering, function catering, mobile coffee bar">
+<meta name="author" content="The Coffee Corner">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.coffeecorner.co.za/enquiry.html">
+
+<meta property="og:title" content="Coffee Corner Catering | Professional Event Services">
+<meta property="og:description" content="Bring the Coffee Corner experience to your special occasion">
+<meta property="og:url" content="https://www.coffeecorner.co.za/enquiry.html">
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>The Coffee Corner</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="enquiry.html">Catering</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Catering Services</h1>
+        <p>Bring The Coffee Corner experience to your office, event, or special occasion.</p>
+        
+        <form class="catering-form">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="event-type">Event Type</label>
+                <select id="event-type" name="event-type">
+                    <option value="">Select event type</option>
+                    <option value="office">Office Meeting</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="birthday">Birthday Party</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="10" max="500">
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Coffee Corner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
